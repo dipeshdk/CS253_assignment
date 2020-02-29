@@ -1,0 +1,12 @@
+#ifndef __INTERSECTION_H__
+#define __INTERSECTION_H__
+
+#include<region.h>
+class Intersection : public Region{
+    Region* r1;
+    Region* r2;
+    public:
+        bool contains(Point p);        
+};
+
+#endif
