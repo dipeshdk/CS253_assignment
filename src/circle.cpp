@@ -1,6 +1,5 @@
 #include<circle.h>
 #include<math.h>   
-#include<point.h>
 
 Circle :: Circle(Point center , double r)
             :center{center}, radius{r}{}

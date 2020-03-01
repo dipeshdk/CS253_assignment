@@ -4,7 +4,7 @@
 class Point {
     public:
         double x,y;
-        Point(double a = 0, double b = 0);
+        Point(double a, double b);
 };
 
 #endif 

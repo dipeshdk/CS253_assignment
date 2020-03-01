@@ -1,7 +1,6 @@
 #ifndef __CIRCLE_H__
 #define __CIRCLE_H__
 
-#include<point.h>
 #include<basic.h>
 
 class Circle : public Basic{
