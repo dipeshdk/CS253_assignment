@@ -4,7 +4,10 @@
 #include<region.h>
 
 class Basic : public Region {
-    Region * r;
+    public:
+    // virtual bool contains(Point p);
+    // virtual Region * translate(Point p);
+    // virtual Region * rotate(double angle);
 };
 
 #endif

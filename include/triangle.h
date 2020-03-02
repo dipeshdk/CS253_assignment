@@ -10,6 +10,7 @@ class Triangle : public Basic{
         Triangle(Point a,Point b,Point c);
         static double area(Point p1,Point p2,Point p3);
         bool contains(Point p);
+        Region translate(Point shift);
 };
 
 #endif

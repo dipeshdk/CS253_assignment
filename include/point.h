@@ -5,6 +5,8 @@ class Point {
     public:
         double x,y;
         Point(double a, double b);
+        Point translate(Point shift);
+
 };
 
 #endif 

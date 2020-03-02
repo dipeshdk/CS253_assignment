@@ -6,11 +6,17 @@
 #include<triangle.h>
 
 class Rectangle : public Basic{
-    Point a,b,c,d;
-        Triangle t1,t2,t3,t4;
     public:
+
+        Point leftbottom;
+        Point rightbottom;
+        Point righttop;
+        Point lefttop;
+
+        Triangle t1,t2,t3,t4;
         Rectangle(Point a,Point b,Point c,Point d);
         bool contains(Point p);
+        Region translate(Point shift);
 };
 
 #endif

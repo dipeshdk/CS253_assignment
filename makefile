@@ -17,7 +17,7 @@ $(inc)/union.h $(inc)/complement.h $(inc)/intersection.h $(inc)/basic.h : $(inc)
 $(inc)/region.h: $(inc)/point.h
 
 obj/%.o : src/%.cpp $(inc)/%.h
- 	g++ -o $@ -c -I$(inc) $< 
+	g++ -o $@ -c -I$(inc) $< 
 
 clean :
 	rm obj/*.o

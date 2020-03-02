@@ -3,9 +3,11 @@
 
 #include<region.h>
 class Complement : public Region {
-    Region* r;
+    Region r;
     public:
+        Complement(Region r);
         bool contains(Point p);
+        Region translate(Point shift);
 };
 
 #endif

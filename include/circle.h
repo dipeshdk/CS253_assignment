@@ -9,6 +9,7 @@ class Circle : public Basic{
     public:
         Circle(Point center , double r);
         bool contains(Point p);
+        Region translate(Point shift);
 };
 
 #endif
