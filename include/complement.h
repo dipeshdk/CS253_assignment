@@ -8,6 +8,8 @@ class Complement : public Region {
         Complement(Region r);
         bool contains(Point p);
         Region translate(Point shift);
+        Region rotate(double theta);
+
 };
 
 #endif

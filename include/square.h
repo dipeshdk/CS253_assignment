@@ -15,6 +15,7 @@ class Square : public Basic{
         Triangle t1,t2,t3,t4;
         Square(Point a,Point b,Point c,Point d);        
         bool contains(Point p);
+        Region rotate(double theta);   
         Region translate(Point shift);
 
 };

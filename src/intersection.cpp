@@ -10,3 +10,7 @@ Intersection:: Intersection(Region r1, Region r2)
 Region Intersection::translate(Point shift){
     return Intersection(r1.translate(shift),r2.translate(shift));
 }
+
+Region Intersection::rotate(double theta){
+    return Intersection(r1.rotate(theta),r2.rotate(theta));
+}

@@ -27,3 +27,7 @@ bool Rectangle :: contains(Point p){
 Region Rectangle::translate(Point shift){
     return Rectangle(leftbottom.translate(shift),rightbottom.translate(shift),righttop.translate(shift),lefttop.translate(shift));
 }
+
+Region Rectangle::rotate(double theta){
+    return Rectangle(leftbottom.rotate(theta),rightbottom.rotate(theta),righttop.rotate(theta),lefttop.rotate(theta));
+}

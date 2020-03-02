@@ -7,7 +7,7 @@ class Region{
     public:
         virtual bool contains(Point p);
         virtual Region translate(Point shift);
-        // virtual Region* rotate(double angle);
+        virtual Region rotate(double theta);
 };
 
 #endif

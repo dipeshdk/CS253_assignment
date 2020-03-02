@@ -17,6 +17,7 @@ class Rectangle : public Basic{
         Rectangle(Point a,Point b,Point c,Point d);
         bool contains(Point p);
         Region translate(Point shift);
+        Region rotate(double theta);   
 };
 
 #endif

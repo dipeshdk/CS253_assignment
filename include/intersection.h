@@ -9,6 +9,8 @@ class Intersection : public Region{
         bool contains(Point p);
         Region translate(Point shift);
         Intersection(Region r1, Region r2);
+        Region rotate(double theta);
+
 };
 
 #endif

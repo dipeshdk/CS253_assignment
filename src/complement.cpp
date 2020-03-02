@@ -11,3 +11,6 @@ Region Complement::translate(Point shift){
     return Complement(r.translate(shift));
 }
 
+Region Complement::rotate(double theta){
+    return Complement(r.rotate(theta));
+}

@@ -9,6 +9,6 @@ class Union : public Region {
         Union(Region r1,Region r2);
         bool contains(Point p);
         Region translate(Point shift);
-
+        Region rotate(double theta);
 };
 #endif

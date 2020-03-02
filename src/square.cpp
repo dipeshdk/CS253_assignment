@@ -31,3 +31,8 @@ bool Square::contains(Point p){
 Region Square::translate(Point shift){
     return Square(leftbottom.translate(shift),rightbottom.translate(shift),righttop.translate(shift),lefttop.translate(shift));
 }
+
+Region Square::rotate(double theta){
+    return Square(leftbottom.rotate(theta),rightbottom.rotate(theta),righttop.rotate(theta),lefttop.rotate(theta));
+}
+

@@ -9,6 +9,7 @@ class Circle : public Basic{
     public:
         Circle(Point center , double r);
         bool contains(Point p);
+        Region rotate(double theta);   
         Region translate(Point shift);
 };
 

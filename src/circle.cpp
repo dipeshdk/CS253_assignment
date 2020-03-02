@@ -15,6 +15,11 @@ bool Circle::contains(Point p){
             return (dist==radius);
     }
 
-Circle Circle::translate(Point shift){
+Region Circle::translate(Point shift){
         return Circle(center.translate(shift),radius);
+}
+
+
+Region Circle::rotate(double theta){
+        return Circle(center.rotate(theta),radius);
 }

@@ -24,3 +24,8 @@ bool Triangle::contains(Point p)
 Region Triangle::translate(Point shift){
     return Triangle(a.translate(shift),b.translate(shift),c.translate(shift));
 }
+
+Region Triangle::rotate(double theta){
+    return Triangle(a.rotate(theta),b.rotate(theta),c.rotate(theta));
+}
+
