@@ -1,16 +1,17 @@
 #include<complement.h>
 #include<point.h>
+#include<region.h>
 
 bool Complement::contains(Point p){
             return !(r.contains(p));
         }
-Complement::Complement(Region r)
+Complement::Complement(Region &r)
     :r{r}{}
 
-Region Complement::translate(Point shift){
-    return Complement(r.translate(shift));
+void Complement::translate(Point shift){
+    r.translate(shift);
 }
 
-Region Complement::rotate(double theta){
-    return Complement(r.rotate(theta));
+void Complement::rotate(double theta){
+    r.rotate(theta);
 }

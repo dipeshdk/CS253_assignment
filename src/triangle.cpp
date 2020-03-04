@@ -21,11 +21,15 @@ bool Triangle::contains(Point p)
     return (area(a,b,c)==area(p,a,b)+area(p,a,c)+area(p,b,c));
 }
 
-Region Triangle::translate(Point shift){
-    return Triangle(a.translate(shift),b.translate(shift),c.translate(shift));
+void Triangle::translate(Point shift){
+    a = a.translate(shift);
+    b = b.translate(shift);
+    c = c.translate(shift);
 }
 
-Region Triangle::rotate(double theta){
-    return Triangle(a.rotate(theta),b.rotate(theta),c.rotate(theta));
+void Triangle::rotate(double theta){
+    a = a.rotate(theta);
+    b = b.rotate(theta);
+    c = c.rotate(theta);
 }
 

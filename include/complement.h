@@ -3,12 +3,12 @@
 
 #include<region.h>
 class Complement : public Region {
-    Region r;
     public:
-        Complement(Region r);
+    Region &r;
+        Complement(Region &r);
         bool contains(Point p);
-        Region translate(Point shift);
-        Region rotate(double theta);
+        void translate(Point shift);
+        void rotate(double theta);
 
 };
 

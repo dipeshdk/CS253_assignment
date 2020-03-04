@@ -3,12 +3,15 @@
 
 #include<region.h>
 class Union : public Region {
-    Region r1;
-    Region r2;
     public :
-        Union(Region r1,Region r2);
+        
+        Region &r1;
+        Region &r2;
+        
+        Union(Region &r1,Region &r2);
+        // Union();
         bool contains(Point p);
-        Region translate(Point shift);
-        Region rotate(double theta);
+        void translate(Point shift);
+        void rotate(double theta);
 };
 #endif

@@ -16,8 +16,8 @@ class Rectangle : public Basic{
         Triangle t1,t2,t3,t4;
         Rectangle(Point a,Point b,Point c,Point d);
         bool contains(Point p);
-        Region translate(Point shift);
-        Region rotate(double theta);   
+        void translate(Point shift);
+        void rotate(double theta);   
 };
 
 #endif

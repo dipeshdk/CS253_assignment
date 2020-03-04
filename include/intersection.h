@@ -3,13 +3,13 @@
 
 #include<region.h>
 class Intersection : public Region{
-    Region r1;
-    Region r2;
     public:
+    Region &r1;
+    Region &r2;
         bool contains(Point p);
-        Region translate(Point shift);
-        Intersection(Region r1, Region r2);
-        Region rotate(double theta);
+        void translate(Point shift);
+        Intersection(Region &r1, Region &r2);
+        void rotate(double theta);
 
 };
 

@@ -4,13 +4,13 @@
 #include<basic.h>
 
 class Circle : public Basic{
-    Point center;
-    double radius;
     public:
+    double radius;
+        Point center;
         Circle(Point center , double r);
         bool contains(Point p);
-        Region rotate(double theta);   
-        Region translate(Point shift);
+        void rotate(double theta);   
+        void translate(Point shift);
 };
 
 #endif

@@ -5,13 +5,13 @@
 #include<basic.h>
 
 class Triangle : public Basic{
-    Point a,b,c;
     public:
+    Point a,b,c;
         Triangle(Point a,Point b,Point c);
         static double area(Point p1,Point p2,Point p3);
         bool contains(Point p);
-        Region rotate(double theta);   
-        Region translate(Point shift);
+        void rotate(double theta);   
+        void translate(Point shift);
 };
 
 #endif

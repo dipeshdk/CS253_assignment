@@ -5,9 +5,9 @@
 
 class Region{
     public:
-        virtual bool contains(Point p);
-        virtual Region translate(Point shift);
-        virtual Region rotate(double theta);
+        virtual bool contains(Point p){};
+        virtual void translate(Point shift){};
+        virtual void rotate(double theta){};
 };
 
 #endif

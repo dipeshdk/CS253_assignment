@@ -28,11 +28,26 @@ bool Square::contains(Point p){
     return (t1.contains(p)||t2.contains(p)||t3.contains(p)||t4.contains(p));
 }
 
-Region Square::translate(Point shift){
-    return Square(leftbottom.translate(shift),rightbottom.translate(shift),righttop.translate(shift),lefttop.translate(shift));
+void Square::translate(Point shift){
+    leftbottom = leftbottom.translate(shift);
+    rightbottom=rightbottom.translate(shift);
+    righttop = righttop.translate(shift);
+    lefttop = lefttop.translate(shift);
+    t1.translate(shift);
+    t2.translate(shift);
+    t3.translate(shift);
+    t4.translate(shift);
+
 }
 
-Region Square::rotate(double theta){
-    return Square(leftbottom.rotate(theta),rightbottom.rotate(theta),righttop.rotate(theta),lefttop.rotate(theta));
+void Square::rotate(double theta){
+    leftbottom = leftbottom.rotate(theta);
+    rightbottom=rightbottom.rotate(theta);
+    righttop = righttop.rotate(theta);
+    lefttop = lefttop.rotate(theta);
+    t1.rotate(theta);
+    t2.rotate(theta);
+    t3.rotate(theta);
+    t4.rotate(theta);
 }
 

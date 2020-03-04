@@ -12,14 +12,15 @@ Circle :: Circle(Point center , double r)
 
 bool Circle::contains(Point p){
             double dist = sqrt(pow(p.x-center.x,2)+pow(p.y-center.y,2));
-            return (dist==radius);
+        //     std::cout << "contains of circle being called" << std::endl;
+            return (dist<=radius);
     }
 
-Region Circle::translate(Point shift){
-        return Circle(center.translate(shift),radius);
+void Circle::translate(Point shift){
+        center = center.translate(shift);
 }
 
 
-Region Circle::rotate(double theta){
-        return Circle(center.rotate(theta),radius);
+void Circle::rotate(double theta){
+        center = center.rotate(theta);
 }
