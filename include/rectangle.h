@@ -7,7 +7,6 @@
 
 class Rectangle : public Basic{
     public:
-
         Point leftbottom;
         Point rightbottom;
         Point righttop;
@@ -15,9 +14,10 @@ class Rectangle : public Basic{
 
         Triangle t1,t2,t3,t4;
         Rectangle(Point a,Point b,Point c,Point d);
-        bool contains(Point p);
-        void translate(Point shift);
-        void rotate(double theta);   
+        virtual bool contains(Point p)override;
+        virtual void translate(Point shift) override;
+        virtual void rotate(double theta) override;
+        virtual ~Rectangle(){};   
 };
 
 #endif

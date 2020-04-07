@@ -4,12 +4,12 @@
 #include<region.h>
 class Complement : public Region {
     public:
-    Region &r;
+        Region &r;
         Complement(Region &r);
-        bool contains(Point p);
-        void translate(Point shift);
-        void rotate(double theta);
-
+        virtual bool contains(Point p)override ;
+        virtual void translate(Point shift)override ;
+        virtual void rotate(double theta) override ;
+        virtual ~Complement(){};
 };
 
 #endif

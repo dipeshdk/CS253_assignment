@@ -3,9 +3,10 @@
 #include<region.h>
 
 bool Complement::contains(Point p){
-            return !(r.contains(p));
-        }
-Complement::Complement(Region &r)
+    return !(r.contains(p));
+}
+
+Complement::Complement (Region &r)
     :r{r}{}
 
 void Complement::translate(Point shift){

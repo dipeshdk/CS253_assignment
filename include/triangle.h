@@ -9,9 +9,10 @@ class Triangle : public Basic{
     Point a,b,c;
         Triangle(Point a,Point b,Point c);
         static double area(Point p1,Point p2,Point p3);
-        bool contains(Point p);
-        void rotate(double theta);   
-        void translate(Point shift);
+        virtual bool contains(Point p)override;
+        virtual void rotate(double theta)override;   
+        virtual void translate(Point shift)override;
+        virtual ~Triangle(){};
 };
 
 #endif

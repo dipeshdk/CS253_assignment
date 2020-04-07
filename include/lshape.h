@@ -1,8 +1,9 @@
 #include<union.h>
 #include<point.h>
 #include<rectangle.h>
+#include<region.h>
 
-class LShape{
+class LShape : public Region{
     public:
         Point leftbottom; 
         double a;
@@ -11,7 +12,8 @@ class LShape{
         Union I;
     
         LShape(Point leftbottom,double a1,double b1,double c1);
-        bool contains(Point p);
-        void translate(Point shift);
-        void rotate(double theta);
+        virtual bool contains(Point p)override;
+        virtual void translate(Point shift)override;
+        virtual void rotate(double theta)override;
+        virtual ~LShape(){};
 };

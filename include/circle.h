@@ -8,9 +8,10 @@ class Circle : public Basic{
     double radius;
         Point center;
         Circle(Point center , double r);
-        bool contains(Point p);
-        void rotate(double theta);   
-        void translate(Point shift);
+        virtual bool contains(Point p) override;
+        virtual void rotate(double theta) override;   
+        virtual void translate(Point shift) override;
+        virtual ~Circle(){};
 };
 
 #endif

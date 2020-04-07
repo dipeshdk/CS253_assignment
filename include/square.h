@@ -14,10 +14,10 @@ class Square : public Basic{
 
         Triangle t1,t2,t3,t4;
         Square(Point a,Point b,Point c,Point d);        
-        bool contains(Point p);
-        void rotate(double theta);   
-        void translate(Point shift);
-
+        virtual bool contains(Point p)override;
+        virtual void rotate(double theta)override;   
+        virtual void translate(Point shift)override;
+        virtual ~Square(){};
 };
 
 #endif
